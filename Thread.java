@@ -1,5 +1,5 @@
 
-public class NewThread implements Runnable {
+public class Thread implements Runnable {
     Thread t;
 
     Newthread() {
