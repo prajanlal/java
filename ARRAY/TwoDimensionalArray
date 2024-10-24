@@ -1,0 +1,23 @@
+public class TwoDimensionalArray {
+    public static void main(String[] args) {
+        // Declare and initialize a 3x3 two-dimensional array
+        int[][] matrix = new int[3][3];
+
+        // Fill the array with values
+        int value = 1;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = value++;
+            }
+        }
+
+        // Print the array values
+        System.out.println("Two-Dimensional Array:");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
