@@ -1,6 +1,6 @@
 public class LengthExample4  
 {  
-// main method  
+// main method
 public static void main(String argvs[])  
 {  
 String str = " Welcome To JavaTpoint ";  
