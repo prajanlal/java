@@ -13,7 +13,7 @@ public class Newthread implements Runnable {
             try {
                 for (int i = 5; i > 0; i--) {
                     System.out.println("child thread: "+ i);
-                    Thread.sleep(500);c
+                    Thread.sleep(500);
                 }
             } catch (InterruptedException e) {
                 System.out.println("child thread Interrupted");
@@ -32,7 +32,7 @@ public class Newthread implements Runnable {
                     } catch (InterruptedException e) {
                         System.out.println("Main thread Interrupted");
                     }
-                    System.out.println("Main thread Exit");
+                    System.out.println("Main thread Existing");
                 }
             }
         }
