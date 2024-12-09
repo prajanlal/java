@@ -1,4 +1,4 @@
-public class ThreeDArray {
+ class ThreedimensionalArray {
 public static void main(String[] args) 
 {
     int[ ][ ][ ] x;
