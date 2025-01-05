@@ -1,13 +1,12 @@
 import java.io.*;
 class room{
-    public void main(String args[]){
         int length,width;
         room(int x,int y){
             length=x;
             width=y;
         }
     }
-        int area(){
+        public void area(){
             area=length*width;
             return area;
         }
@@ -18,12 +17,12 @@ class room{
                 height=z;
             }
         }
-            int volume(){
+            public void  volume(){
                 volume = length*width*height;
                  return volume;
             }
             class singleinheritance{
-                public static void main(String args[]){
+                public static void main(String[] args){
                     hall h1=new  hall(10,10,10);
                     int a1=h1.area();
                     int v1=h1.volume();
