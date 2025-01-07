@@ -1,18 +1,20 @@
-Interface area;{
+
+Interface area;
+{ 
  final static float pi = 3.14f;
  float compute(float x, float y)
         }
-        class rectangle implements area {
+       public class rectangle implements area {
             public float compute(float x, float y) {
                 return (x * y);
             }
         }
-        class circle implements area {
+       public class circle implements area {
             public float compute(float x, float y) {
                 return (pi * x * x);
             }
         }
-class testinterface{
+public class testinterface{
          public static void main(String ab[])
          {
              rectangle r1=new rectangle();
