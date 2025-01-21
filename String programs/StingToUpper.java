@@ -6,7 +6,7 @@ public class ToUpperCase {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter a string
-        System.out.print("Enter a string: ");
+        System.out.println("Enter a string: ");
         String input = scanner.nextLine();
 
         // Convert the string to uppercase
