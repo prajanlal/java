@@ -1,7 +1,7 @@
 public class LengthExample4  
 {  
 // main method
-public static void main(String argvs[])  
+public static void main(String arg[])  
 {  
 String str = " Welcome To JavaTpoint ";  
 int sizeWithWhiteSpaces = str.length();  
