@@ -1,4 +1,4 @@
-import java.util.Scanner;
+lnimport java.util.Scanner;
 
 public class ToLowerCase {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class ToLowerCase {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter a string
-        System.out.print("Enter a string: ");
+        System.out.println("Enter a string: ");
         String input = scanner.nextLine();
 
         // Convert the string to lowercase
