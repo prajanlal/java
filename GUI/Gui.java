@@ -1,21 +1,21 @@
-import javax.swing.JLabel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
 
 
-public class GUI implements ActionListener {  
+public class Gui implements ActionListener {  
   
     private static JLabel label;
     private static JTextField userText;
     private static JLabel passwordLabel;
     private static JPasswordField passwordText; 
     private static JLabel Success;
-   
+    JButton addButton,subButton,mulButton,decButton;
+    JButton equButton,clrButton,delButton,divButton;
+   static JButton[] functionButtons = new JButton[8];
+   static JButton[] numberButtons = new JButton[10];
+    
+    
     //https://beginnersbook.com/2015/07/java-swing-tutorial
   
     public static void main(String args[]){
@@ -44,7 +44,7 @@ public class GUI implements ActionListener {
         panel.add(passwordText);
          
        JButton button = new JButton("LOGIN");
-       button.addActionListener(new GUI());
+       button.addActionListener(new Gui());
        button.setBounds(10,80,80,25);
        panel.add(button); 
   
@@ -52,13 +52,49 @@ public class GUI implements ActionListener {
         Success.setBounds(10,110,300,25);
         panel.add(Success);
          
+          JButton addButton = new JButton();
+          addButton.setBounds(40, 60, 160, 100);
+          panel.add(addButton);
+
+         JButton subButton = new JButton();
+         subButton.setBounds(60, 90, 160, 100);
+         panel.add(subButton);
+
+         JButton mulButton = new JButton();
+         mulButton.setBounds(80, 120, 160, 100);
+         panel.add(mulButton);
+  
+         
+         JButton decButton = new JButton();
+         decButton.setBounds(100, 150, 160, 100);
+         panel.add(decButton);
+
+         JButton equButton = new JButton();
+         equButton.setBounds(120, 180, 160, 100);
+         panel.add(equButton);
+
+         JButton clrButton = new JButton();
+         clrButton.setBounds(140,210,160,100);
+         panel.add(clrButton);
+
+         JButton delButton = new JButton();
+         delButton.setBounds(160,240,160,100);
+         panel.add(delButton);
+
+         JButton divButton = new JButton();
+         divButton.setBounds(180,270,160,100);
+         panel.add(divButton);
+
+
+         
+         functionButtons[0] =addButton;
         frame.setVisible(true);
     }
   
     @Override
     public void actionPerformed(ActionEvent e) { 
           String user = userText.getText();      
-          String password = passwordText.getText();
+          String password = passwordchar.getText();
       
           System.out.println(user + " , " + password); 
          
