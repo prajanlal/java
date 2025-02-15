@@ -1,4 +1,4 @@
-public class CharAtExample {
+public class StringCharAt {
 
     public static void main(String[] args) {
         String str = "Hello, World!";

@@ -1,4 +1,4 @@
-public class car{
+public class Polymorphism{
     public void sportcar() {
         System.out.println("bmw is a sports car");
     }

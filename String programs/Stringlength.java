@@ -1,4 +1,4 @@
-public class LengthExample4  
+public class Stringlength
 {  
 // main method
 public static void main(String arg[])  

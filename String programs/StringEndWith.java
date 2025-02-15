@@ -1,4 +1,4 @@
-public class EndsWith {
+public class StringEndWith {
     public static void main(String[] args) {
         String str = "Hello, world!";
         

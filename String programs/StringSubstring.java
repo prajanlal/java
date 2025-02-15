@@ -1,4 +1,4 @@
-public class Substring{
+public class StringSubstring{
     public static void main(String[] args) {
         String str = "Hello, World!";
         

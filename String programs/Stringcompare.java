@@ -1,4 +1,4 @@
-public class Main {
+public class Stringcompare {
   public static void main(String[] args) {
 
     // create 3 strings

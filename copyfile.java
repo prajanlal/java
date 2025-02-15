@@ -1,8 +1,8 @@
 import java.io.*;
 
 public class copyfile {
-    public static void main(String args[]) {
-        throw IOException {
+        public static void  main(String args[])
+             throws IOException {
             FileReader in = null;
             FileWriter out = null;
             try {
@@ -22,4 +22,4 @@ public class copyfile {
             }
         }
     }
-}
+

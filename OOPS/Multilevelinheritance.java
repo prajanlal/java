@@ -13,7 +13,7 @@ class Cube extends Rectangle {
       System.out.println("Inside volume");
    }
 }
-public class Tester {
+public class Multilevelinheritance {
    public static void main(String[] arguments) {
       Cube cube = new Cube();
       cube.display();

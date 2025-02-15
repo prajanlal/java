@@ -1,4 +1,4 @@
-public class StringConcat {
+public class StringConcate {
     public static void main(String[] args) {
         // Define two strings
         String str1 = "Hello, ";

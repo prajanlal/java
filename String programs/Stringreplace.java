@@ -1,4 +1,4 @@
-public class StringReplaceExample {
+public class Stringreplace {
     public static void main(String[] args) {
         String original = "Hello, World!";
         String modified = original.replace("World", "Java");
