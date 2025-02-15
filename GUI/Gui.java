@@ -8,7 +8,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 
-public class GUI implements ActionListener {  
+public class Gui implements ActionListener {  
   
     private static JLabel label;
     private static JTextField userText;
@@ -58,11 +58,11 @@ public class GUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) { 
           String user = userText.getText();      
-          String password = passwordText.getText();
-      
-          System.out.println(user + " , " + password); 
          
-           if(user.equals("Prajan Lal") && password.equals("p123456789p")){
+      
+          System.out.println(user + " "); 
+         
+           if(user.equals("Prajan Lal")){
              Success.setText("Login Successful!");
            }
       }
