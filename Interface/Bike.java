@@ -1,9 +1,9 @@
-public  class Bike implements Vehicle {
+public  class Bike  {
 
-    String Brand;
-    String Model;
-    String SpeedLimit;
-    String MadeIn;
+  private  String Brand;
+  private  String Model;
+  private  String SpeedLimit;
+  private String MadeIn;
           
           public void setBrand(String Brand){
             this.Brand = Brand;
@@ -31,32 +31,19 @@ public  class Bike implements Vehicle {
             return MadeIn;
           }
 
-
-    public void Start(){
-        System.out.print("Kawasaki has stated");
-     
-                }
-                public static void Speed(){
-                    System.out.print("The speed has limited to 100kmph");
-                }
-
                 public Bike(String brand,String BikeModel,String limit,String Country){
                     this.Brand = brand;
                     this.Model = BikeModel;
                     this.SpeedLimit = limit;
                     this.MadeIn = Country;
+     
                 }
-
-    @Override
-    public void start() { 
-        try{
-                 int number = Integer.parseInt("ABC");
-          //  int Result = 10/0;
-           // System.out.println("The reult of "+Result);
-        } catch (ArithmeticException e) {
-                   System.out.println(" Division by Zero is not allowed. ");
-        } finally {
-            System.out.println("Exception complted.");
-        }
-      }
+                public  void display() {
+                  System.out.println("The is the name of the brand: "+Brand);
+                  System.out.println("This the name of the model: "+Model);
+                  System.out.println("This is the name of the Bike speed limit: "+SpeedLimit);
+                  System.out.println("This is the companies name of origin place: "+MadeIn);
+                }
+                
 }
+                    
