@@ -1,4 +1,5 @@
 public  class Bike implements Vehicle {
+
     String Brand;
     String Model;
     String SpeedLimit;
@@ -38,6 +39,7 @@ public  class Bike implements Vehicle {
                 public static void Speed(){
                     System.out.print("The speed has limited to 100kmph");
                 }
+
                 public Bike(String brand,String BikeModel,String limit,String Country){
                     this.Brand = brand;
                     this.Model = BikeModel;
@@ -46,8 +48,15 @@ public  class Bike implements Vehicle {
                 }
 
     @Override
-    public void start() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void start() { 
+        try{
+                 int number = Integer.parseInt("ABC");
+          //  int Result = 10/0;
+           // System.out.println("The reult of "+Result);
+        } catch (ArithmeticException e) {
+                   System.out.println(" Division by Zero is not allowed. ");
+        } finally {
+            System.out.println("Exception complted.");
+        }
       }
-      
-    }   
+}
