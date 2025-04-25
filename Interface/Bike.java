@@ -1,27 +1,27 @@
 public  class Bike  {
 
-  private  String Brand;
-  private  String Model;
-  private  String SpeedLimit;
-  private String MadeIn;
-          
-          public void setBrand(String Brand){
-            this.Brand = Brand;
+    String SBrand;
+    String SModel;
+    int SpeedLimit;
+    String MadeIn;
+     
+          public void setSBrand(String SBrand){
+            this.SBrand = SBrand;
 
           }
-          public String getBrand(){
-            return Brand;
+          public String getSBrand(){
+            return SBrand;
           }
-          public void setModel(String Model){
-            this.Model = Model;
+          public void setSModel(String SModel){
+            this.SModel = SModel;
           }
-          public String getModel(){
-            return Model;
+          public String getSModel(){
+            return SModel;
           }
-          public void setSpeedLimit(String SpeedLimit){
+          public void setSpeedLimit(int SpeedLimit){
             this.SpeedLimit = SpeedLimit;
           }
-          public String getSpeedLimit(){
+          public int getSpeedLimit(){
             return SpeedLimit;
           }
           public void setMadeIn(String MadeIn){
@@ -31,19 +31,17 @@ public  class Bike  {
             return MadeIn;
           }
 
-                public Bike(String brand,String BikeModel,String limit,String Country){
-                    this.Brand = brand;
-                    this.Model = BikeModel;
+                public Bike(String brand,String BikeModel,int limit,String Country){
+                    this.SBrand = brand;
+                    this.SModel = BikeModel;
                     this.SpeedLimit = limit;
                     this.MadeIn = Country;
-     
                 }
+
                 public  void display() {
-                  System.out.println("The is the name of the brand: "+Brand);
-                  System.out.println("This the name of the model: "+Model);
-                  System.out.println("This is the name of the Bike speed limit: "+SpeedLimit);
-                  System.out.println("This is the companies name of origin place: "+MadeIn);
+                  System.out.println("Bike Brand "+SBrand);
+                  System.out.println("Biek Model: "+SModel);
+                  System.out.println("Bike speed limit is: "+SpeedLimit);
+                  System.out.println("Made in which country: "+MadeIn);
                 }
-                
-}
-                    
+    }
