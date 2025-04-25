@@ -1,13 +1,10 @@
 public class Main {
+
     public static void main(String args[]){
-        Car car = new Car();
-        Bike bike = new Bike();
+         Car cars = new Car("BMW","M4",800);
+          cars.display();
 
-        car.start();
-        bike.start();
-
-        car.stop();
-        bike.stop();
+         Bike bike = new Bike("KAWASAKI","ZX10R","800","JAPAN");
+         bike.display();
     }
-    
 }
