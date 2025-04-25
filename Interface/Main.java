@@ -4,7 +4,7 @@ public class Main {
          Car cars = new Car("BMW","M4",800);
           cars.display();
 
-         Bike bike = new Bike("KAWASAKI","ZX10R","800","JAPAN");
+         Bike bike = new Bike("KAWASAKI","ZX10R",800,"JAPAN");
          bike.display();
     }
 }
