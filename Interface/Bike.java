@@ -1,10 +1,14 @@
 public class Bike implements Vehicle{ 
     @Override
     public void Engine(){
-        System.out.println("The engine type is V7");
+        System.out.println("Engine type is V7");
     }
     @Override
       public void HP(){
-        System.out.println("The number of horse power of the bike per km is 100 ");
+        System.out.println("Horse Power per km is 100 ");
+      }
+      @Override
+      public int getTopSpeed(){
+        return 800;
       }
 }
