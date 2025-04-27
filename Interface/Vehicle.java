@@ -3,9 +3,9 @@
 
   void start();
   void stop();
-  void accelerate(int increase);
-  void brake(int decrease);
-  void refuel(int fuelAdded);
+  void accelerate();
+  void brake();
+  void refuel();
   void displaystatus();
   void Engine();
   void HP();
