@@ -8,15 +8,15 @@ public class Car implements Vehicle {
         System.out.println("The car has been stopped");
     }
     @Override
-    public void accelerate(int increase){
+    public void accelerate( ){
         System.out.println("The accleration has been started");
     }
     @Override
-    public void brake(int decrease){
+    public void brake( ){
         System.out.println("The car has been stopped because of the brake ");
     }
     @Override
-    public void refuel(int fuelAdded){
+    public void refuel( ){
         System.out.println("The car has been refuelled");
     }
     @Override
