@@ -1,32 +1,33 @@
+
  public class Bike implements Vehicle { 
 
  @Override
- public void start(){
-  System.out.println("The biek has been started");
+ public  void start() {
+  System.out.println("The bike has been started");
  }
 
  @Override
- public void stop(){
+ public  void stop() {
   System.out.println("The bike has been stopped");
  }
 
  @Override
- public void accelerate(int increase){
+ public void accelerate( ) {
   System.out.println("The acceleration has been starteed");
  }
 
  @Override
- public void brake(int decrease){
+  public void brake( ) {
   System.out.println("It's time to brake");
  }
 
  @Override
- public void refuel(int fuelAdded){
+ public void refuel( ) {
   System.out.println("The bike fuel has been refuelled");
  }
 
  @Override
- public void displaystatus(){
+ public void displaystatus() {
   System.out.println("The status ");
  }
  
@@ -39,7 +40,6 @@
       public void HP() {
         System.out.println("Horse Power per km is 100 ");
       }
-
       @Override
       public int getTopSpeed() {
         return 800;
