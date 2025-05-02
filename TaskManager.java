@@ -4,19 +4,19 @@ import java.util.Scanner;
 
  public class TaskManager {
     ArrayList<Task> tasks = new ArrayList<>();
-  //  private static final Scanner scanner = new Scanner(System.in);
+   private static final Scanner scanner = new Scanner(System.in);
 
     public void addTask() {
-        System.out.print("Enter the task name: ");
-     //   String name = scanner.nextLine();
+     System.out.print("Enter the task name: ");
+      String name = scanner.nextLine();
 
         System.out.print("Enter task status (Pending/In Progress/Completed): ");
-    //    String status = scanner.nextLine();
+      String status = scanner.nextLine();
 
         System.out.print("Is this task important? (yes/no): ");
-     //   boolean important = scanner.nextLine().equalsIgnoreCase("yes");
+        boolean important = scanner.nextLine().equalsIgnoreCase("yes");
 
-        Task newTask = new Task(name, status, important);
+        Task newTask = new Task(name,status, important);
         tasks.add(newTask);
         System.out.println("Task added successfully!");
     }
@@ -36,7 +36,7 @@ import java.util.Scanner;
 
     public void deleteTask() {
         System.out.print("Enter task name to delete: ");
-      //  String name = scanner.nextLine();
+       String name = scanner.nextLine();
         if (tasks.removeIf(task -> task.getName().equalsIgnoreCase(name))) {
             System.out.println("Task deleted successfully.");
         } else {
@@ -53,7 +53,7 @@ import java.util.Scanner;
             System.out.println("4. Exit");
             System.out.println("Choose an option (1-4): ");
 
-         //   String choice = scanner.nextLine().trim(); 
+            String choice = scanner.nextLine().trim(); 
 
             try {
                 switch (choice) {
