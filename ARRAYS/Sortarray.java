@@ -2,14 +2,22 @@
 import java.util.Arrays;
 
 public class Sortarray  {
-       public static void main(String[] args){
-        int[] numbers = {11, 21, 31, 41, 51, 61, 71};
-        int[] nbrs = {12, 29, 39, 4};
-        int[] result = new int[numbers.length + nbrs.length ];
 
-           System.arraycopy(numbers, 0, result, 0, numbers.length);
-           System.arraycopy(nbrs, 0, result ,numbers.length , nbrs.length);
-           
-           System.out.println("Combined Array: "+Arrays.toString(result));
-                  }
-}
+       public static void main(String[] args) { 
+       int[] array1 = {12, 2, 34, 21, 10};
+       int[] array2 = {30, 21, 12};
+       int[] array3 = {20, 30, 40};
+
+       int[] result = new int[array1.length + array2.length +array3.length]; 
+
+       System.arraycopy(array1, 0, result, 0, array1.length);
+       System.arraycopy(array2, 0, result, 0, array2.length);
+       System.arraycopy(array3, 0, result, 0, array3.length);
+
+       System.arraycopy(array2, 0, result, 0, array2.length);
+       System.arraycopy(array2, 0, result, array1.length , array2.length, array3.length);
+
+       System.out.println("Combined Array: "+ Arrays.toString(result));
+
+       }
+       }
