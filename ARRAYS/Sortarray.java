@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class Sortarray  {
        public static void main(String[] args){
         int[] numbers = {11, 21, 31, 41, 51, 61, 71};
@@ -7,5 +10,6 @@ public class Sortarray  {
            System.arraycopy(numbers, 0, result, 0, numbers.length);
            System.arraycopy(nbrs, 0, result ,numbers.length , nbrs.length);
            
+           System.out.println("Combined Array: "+Arrays.toString(result));
                   }
 }
