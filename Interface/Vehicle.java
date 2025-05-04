@@ -19,5 +19,5 @@ public interface Vehicle {
 
     int getTopSpeed();
 
-    int time();
+    int Time();
 }
