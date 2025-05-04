@@ -8,6 +8,7 @@ public class User {
         try (Scanner scanner = new Scanner(System.in)) {
             Vehicle Bike = new Bike();
             Vehicle Car = new Car();
+            Vehicle Train = new Train();
 
             System.out.println("\n");
             System.out.println("The Bike Behaviours");
@@ -32,6 +33,14 @@ public class User {
             Car.HP();
 
             System.out.println("Car Top Speed: " + Car.getTopSpeed() + "km/h");
+
+            System.err.println("\n");
+            System.out.println("Train behaviour");
+            System.out.println("\n");
+
+            Train.Time();
+
+            System.out.println("About the Train: " + Train.Time() + "StationTime");
 
             OUTER:
             while (true) {
@@ -71,6 +80,7 @@ public class User {
                     }
                     case "3" -> {
                         vehicle = new Train();
+                        vehicle.Time();
                     }
                     case "4" -> {
                         System.out.println("Exit ");
