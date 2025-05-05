@@ -9,7 +9,7 @@ public class Gui {
     public static void main(String[] args) {
 
         JLabel label = new JLabel();
-        JTextField text = new JTextField();
+        JTextField textfield = new JTextField();
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
 
@@ -19,6 +19,9 @@ public class Gui {
 
         frame.setVisible(true);
         panel.setLayout(null);
+
+        textfield.setBounds(20, 30, 400, 50);
+        panel.add(textfield);
 
     }
 }
