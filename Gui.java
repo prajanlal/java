@@ -17,8 +17,10 @@ public class Gui {
 
         frame.setVisible(true);
 
+        panel.setLayout(null);
         textField.setLayout(null);
         textField.setBounds(20, 30, 400, 50);
+        panel.add(textField);
 
     }
 }
