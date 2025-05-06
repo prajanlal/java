@@ -1,6 +1,5 @@
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -8,20 +7,18 @@ public class Gui {
 
     public static void main(String[] args) {
 
-        JLabel label = new JLabel();
-        JTextField textfield = new JTextField();
+        JFrame frame = new JFrame("Calculator");
+        JTextField textField = new JTextField();
         JPanel panel = new JPanel();
-        JFrame frame = new JFrame();
 
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
 
         frame.setVisible(true);
-        panel.setLayout(null);
 
-        textfield.setBounds(20, 30, 400, 50);
-        panel.add(textfield);
+        textField.setLayout(null);
+        textField.setBounds(20, 30, 400, 50);
 
     }
 }
