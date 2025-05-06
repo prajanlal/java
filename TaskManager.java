@@ -45,12 +45,12 @@ public class TaskManager {
         }
     }
 
-    public void reminderTask() {
+    /* public void reminderTask() {
         if (tasks.addAll(tasks)) {
             System.out.println(" " + tasks);
         }
     }
-
+     */
     public void startApp() {
         while (true) {
             System.out.println("\nTo-Do App:");
