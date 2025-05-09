@@ -1,26 +1,25 @@
 
+import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Gui extends TaskManager {
+public class Gui {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame("Calculator");
-        JTextField textField = new JTextField();
+        JFrame frame = new JFrame();
         JPanel panel = new JPanel();
+        JTextField textField = new JTextField();
 
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
         frame.add(panel);
 
-        frame.setVisible(true);
+        panel.setBackground(Color.yellow);
 
         panel.setLayout(null);
-        textField.setLayout(null);
-        textField.setBounds(20, 30, 400, 50);
-        panel.add(textField);
 
     }
 }
