@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,14 +12,12 @@ public class Gui {
     public static void main(String[] args) {
 
         JFrame frame = new JFrame();
-
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         JPanel panel = new JPanel();
 
         frame.add(panel);
-
+        panel.setBackground(Color.ORANGE);
         placeComponents(panel);
 
         frame.setVisible(true);
@@ -29,6 +28,7 @@ public class Gui {
         panel.setLayout(null);
 
         JLabel userLabel = new JLabel("User");
+        userLabel.setForeground(Color.black);
         userLabel.setBounds(10, 20, 80, 25);
         panel.add(userLabel);
 
@@ -37,6 +37,7 @@ public class Gui {
         panel.add(userText);
 
         JLabel passwordLabel = new JLabel("Password");
+        passwordLabel.setForeground(Color.black);
         passwordLabel.setBounds(10, 50, 80, 25);
         panel.add(passwordLabel);
 
@@ -45,6 +46,7 @@ public class Gui {
         panel.add(passwordText);
 
         JButton loginButton = new JButton("Login");
+        loginButton.setForeground(Color.orange);
         loginButton.setBounds(10, 80, 80, 25);
         panel.add(loginButton);
 
