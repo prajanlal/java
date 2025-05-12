@@ -1,20 +1,26 @@
+
 import java.util.Scanner;
 
-class Main {
-  public static void main(String[] args) {
+public class Scanner {
 
-    // creates an object of Scanner
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    System.out.print("Enter your name: ");
+        // creates an object of Scanner
+        Scanner input = new Scanner(System.in);           //INPUT
 
-    // takes input from the keyboard
-    String name = input.nextLine();
+        System.out.println("Enter your name: ");                    //NAME
 
-    // prints the name
-    System.out.println("My name is " + name);
+        // takes input from the keyboard
+        String name = input.nextLine();                     //INPUT
 
-    // closes the scanner
-    input.close();
-  }
+        System.out.println("Enter your thoughts: ");                   //THOUGHTS
+
+        String thoughts = input.nextLine();             //INPUT
+        // prints the name
+        System.out.println("My name is " + name);           //NAME ANSWER
+
+        System.out.println("This is the message to you son nobody is like you so smile shine your life and show them your power" + thoughts);          //THOUGHTS ANSWER
+        // closes the scanner
+        input.close();
+    }
 }
