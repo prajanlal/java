@@ -1,55 +1,71 @@
 
 import java.awt.Color;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
+import java.awt.event.*;
+import javax.swing.*;
 
-public class Gui {
+public class Gui implements ActionListener {
 
-    public static void main(String[] args) {
+    private static JLabel label;
+    private static JTextField userText;
+    private static JLabel passwordLabel;
+    private static JPasswordField passwordText;
+    private static JLabel Success;
 
-        JFrame frame = new JFrame();
+    //https://beginnersbook.com/2015/07/java-swing-tutorial
+    public static void main(String args[]) {
+        JFrame frame = new JFrame("Calculator");
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
-
+        panel.setBackground(Color.red);
         frame.add(panel);
-        panel.setBackground(Color.ORANGE);
-        placeComponents(panel);
 
         frame.setVisible(true);
-    }
-
-    public static void placeComponents(JPanel panel) {
 
         panel.setLayout(null);
 
-        JLabel userLabel = new JLabel("User");
-        userLabel.setForeground(Color.black);
-        userLabel.setBounds(10, 20, 80, 25);
-        panel.add(userLabel);
+        JTextField textField = new JTextField();
+        textField.setBounds(20, 30, 400, 50);
+        panel.add(textField);
 
-        JTextField userText = new JTextField(20);
-        userText.setBounds(100, 20, 165, 25);
-        panel.add(userText);
+        JButton buttonadd = new JButton("+");
+        buttonadd.setBounds(95, 105, 200, 50);
+        buttonadd.setBackground(Color.CYAN);
+        panel.add(buttonadd);
 
-        JLabel passwordLabel = new JLabel("Password");
-        passwordLabel.setForeground(Color.black);
-        passwordLabel.setBounds(10, 50, 80, 25);
-        panel.add(passwordLabel);
+        JButton buttonsub = new JButton("-");
+        buttonsub.setBounds(75, 95, 200, 50);
+        buttonsub.setBackground(Color.cyan);
+        panel.add(buttonsub);
 
-        JPasswordField passwordText = new JPasswordField(20);
-        passwordText.setBounds(100, 50, 165, 25);
-        panel.add(passwordText);
+        JButton buttonmul = new JButton("*");
+        buttonmul.setBounds(95, 105, 200, 50);
+        buttonmul.setBackground(Color.cyan);
+        panel.add(buttonmul);
 
-        JButton loginButton = new JButton("Login");
-        loginButton.setForeground(Color.orange);
-        loginButton.setBounds(10, 80, 80, 25);
-        panel.add(loginButton);
+        JButton buttonmod = new JButton("%");
+        buttonmod.setBounds(110, 115, 200, 50);
+        buttonmod.setBackground(Color.cyan);
+        panel.add(buttonmod);
+
+        JButton buttondiv = new JButton("/");
+        buttondiv.setBounds(120, 125, 200, 50);
+        buttondiv.setBackground(Color.cyan);
+        panel.add(buttondiv);
+
+        JButton Delete = new JButton("Delete");
+        Delete.setBounds(145, 155, 200, 50);
+        Delete.setBackground(Color.cyan);
+
+        JButton Clear = new JButton();
+        Clear.setBounds(165, 175, 200, 50);
+        Clear.setBackground(Color.cyan);
+        panel.add(Clear);
 
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
