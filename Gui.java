@@ -13,6 +13,7 @@ public class Gui implements ActionListener {
 
     //https://beginnersbook.com/2015/07/java-swing-tutorial
     public static void main(String args[]) {
+
         JFrame frame = new JFrame("Calculator");
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,6 +27,7 @@ public class Gui implements ActionListener {
 
         JTextField textField = new JTextField();
         textField.setBounds(20, 30, 400, 50);
+        textField.setBackground(Color.LIGHT_GRAY);
         panel.add(textField);
 
         JButton buttonadd = new JButton("+");
@@ -41,6 +43,7 @@ public class Gui implements ActionListener {
         JButton buttonmul = new JButton("*");
         buttonmul.setBounds(95, 105, 200, 50);
         buttonmul.setBackground(Color.cyan);
+        buttonmul.setBorderPainted(true);
         panel.add(buttonmul);
 
         JButton buttonmod = new JButton("%");
