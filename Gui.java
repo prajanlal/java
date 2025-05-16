@@ -60,3 +60,8 @@ public class Gui {
     }
     private Object listTasks() {
         throw new UnsupportedOperationExcption("Unimplemented method 'listTasks' ");
+    }
+    private Object deleteTasks() {
+        throw new UnsupportedOperationException("Unimplemented method 'deleteTasks' ");
+    }
+}
