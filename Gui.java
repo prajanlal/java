@@ -17,7 +17,7 @@ public class Gui {
     private JList<String> taskList;
     private JTextField taskField;
 
-    public TaskManager() {
+    public void TaskManager() {
         tasks = new ArrayList<>();
 
         JFrame frame = new JFrame("Task Manager");
@@ -51,6 +51,12 @@ public class Gui {
         deleteButton.addActionListener(e -> deleteTask());
         startButton.addActionListener(e -> startApp);
          frame.setVisible(true);
-         
+
+        
     }
-}
+    private Object addTask() {
+        throw new  UnsupportedOperationException("Unimplemented method 'addtask'  ");
+        
+    }
+    private Object listTasks() {
+        throw new UnsupportedOperationExcption("Unimplemented method 'listTasks' ");
