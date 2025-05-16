@@ -1,74 +1,56 @@
+package java;
 
 import java.awt.Color;
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.FlowLayout;
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
-public class Gui implements ActionListener {
+public class Gui {
 
-    private static JLabel label;
-    private static JTextField userText;
-    private static JLabel passwordLabel;
-    private static JPasswordField passwordText;
-    private static JLabel Success;
+    private ArrayList<String> tasks;
+    private DefaultListModel<String> taskListModel;
+    private JList<String> taskList;
+    private JTextField taskField;
 
-    //https://beginnersbook.com/2015/07/java-swing-tutorial
-    public static void main(String args[]) {
+    public TaskManager() {
+        tasks = new ArrayList<>();
 
-        JFrame frame = new JFrame("Calculator");
+        JFrame frame = new JFrame("Task Manager");
+        JTextField textField = new JTextField(20);
         frame.setSize(450, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel panel = new JPanel();
-        panel.setBackground(Color.red);
-        frame.add(panel);
-
         frame.setVisible(true);
+        frame.setLayout(new FlowLayout());
+    
+        taskField = new JTextField(20);
+        frame.add(taskField);
 
-        panel.setLayout(null);
+        JButton addButton = new JButton("Add Task");
+        frame.add(addButton);
 
-        JTextField textField = new JTextField();
-        textField.setBounds(20, 30, 400, 50);
-        textField.setBackground(Color.LIGHT_GRAY);
-        panel.add(textField);
+        JButton listButton = new JButton("List Tasks");
+        frame.add(listButton);
+               
+        JButton  deleteButton = new JButton("Delete Task");
+        frame.add(deleteButton);
 
-        JButton buttonadd = new JButton("+");
-        buttonadd.setBounds(95, 105, 200, 50);
-        buttonadd.setBackground(Color.CYAN);
-        panel.add(buttonadd);
+        JButton startButton = new JButton("Start Task");
+        frame.add(startButton);
 
-        JButton buttonsub = new JButton("-");
-        buttonsub.setBounds(75, 95, 200, 50);
-        buttonsub.setBackground(Color.cyan);
-        panel.add(buttonsub);
+        taskListModel = new DefaultListModel<>();
+        taskList = new JList<>(task);
+        frame.add(new JScrollPane(taskList));
 
-        JButton buttonmul = new JButton("*");
-        buttonmul.setBounds(95, 105, 200, 50);
-        buttonmul.setBackground(Color.cyan);
-        buttonmul.setBorderPainted(true);
-        panel.add(buttonmul);
-
-        JButton buttonmod = new JButton("%");
-        buttonmod.setBounds(110, 115, 200, 50);
-        buttonmod.setBackground(Color.cyan);
-        panel.add(buttonmod);
-
-        JButton buttondiv = new JButton("/");
-        buttondiv.setBounds(120, 125, 200, 50);
-        buttondiv.setBackground(Color.cyan);
-        panel.add(buttondiv);
-
-        JButton Delete = new JButton("Delete");
-        Delete.setBounds(145, 155, 200, 50);
-        Delete.setBackground(Color.cyan);
-
-        JButton Clear = new JButton();
-        Clear.setBounds(165, 175, 200, 50);
-        Clear.setBackground(Color.cyan);
-        panel.add(Clear);
-
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        addButton.addActionListener(e -> addTask());
+        listButton.addActionListener(e -> listTasks());
+        deleteButton.addActionListener(e -> deleteTask());
+        startButton.addActionListener(e -> startApp);
+         frame.setVisible(true);
+         
     }
 }
