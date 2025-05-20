@@ -11,4 +11,7 @@ public class Gui {
     JTextField textField = new JTextField();
     textField.setBounds(20,30,400,30);
     panel.add(textField);
+
+    panel.setLayout(null);
+
     
