@@ -1,1 +1,11 @@
+public class Gui {
+  public static void main(String[] args) {
+    JFrame frame = new JFrame();
+    JPanel panel = new JPanel();
 
+    frame.setSize(450,450);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(True);
+    frame.add(panel);
+
+    
