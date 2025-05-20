@@ -1,6 +1,6 @@
 public class Gui {
   public static void main(String[] args) {
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Calculator");
     JPanel panel = new JPanel();
 
     frame.setSize(450,450);
@@ -13,5 +13,11 @@ public class Gui {
     panel.add(textField);
 
     panel.setLayout(null);
+
+    JButton Addbutton = new JButton();
+    button.setBounds(30,20,400,30);
+    panel.add(Addbutton);
+
+    
 
     
