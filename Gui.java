@@ -19,7 +19,14 @@ public class Gui {
                        7, 8, 9,
                        =, +, -};
 
-    button.setOnClickListener();
+    button.setOnClickListener(OnClick listener()) {
+                              if( button == (button)) {
+                                buttons = button + 1;
+    }
+    if(button == (empty)) {
+      buttons = button - 1;
+    }
+    
 
     
 
