@@ -14,21 +14,14 @@ public class Gui {
 
     panel.setLayout(null);
 
-    JButton Addbutton = new JButton();
-    button.setBounds(30,20,400,30);
-    panel.add(Addbutton);
+    String[] button = {1, 2, 3,
+                       4, 5, 6,
+                       7, 8, 9,
+                       =, +, -};
 
-    JButtton Subutton = new JButton();
-    Subutton.setBounds(20,30,400,30);
-    panel.add(Subutton);
+    button.setOnClickListener();
 
-    JButton Mulbutton = new JButton();
-    Mulbutton.setBounds(20,30,400,30);
-    panel.add(Mulbutton);
-
-    JButton Divbutton = new Jbutton();
-    Divbutton.setBounds(20,30,400,30);
-    panel.add(Divbutton);
+    
 
     
     
