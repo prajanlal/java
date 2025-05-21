@@ -18,6 +18,19 @@ public class Gui {
     button.setBounds(30,20,400,30);
     panel.add(Addbutton);
 
+    JButtton Subutton = new JButton();
+    Subutton.setBounds(20,30,400,30);
+    panel.add(Subutton);
+
+    JButton Mulbutton = new JButton();
+    Mulbutton.setBounds(20,30,400,30);
+    panel.add(Mulbutton);
+
+    JButton Divbutton = new Jbutton();
+    Divbutton.setBounds(20,30,400,30);
+    panel.add(Divbutton);
+
+    
     
 
     
