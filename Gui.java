@@ -25,7 +25,9 @@ public class Gui {
     }
     if(button == (empty)) {
       buttons = button - 1;
-    }
+    } else if (button == (Isfull)) {
+      buttons = button++;
+    } else if (button == (Ismid))
     
 
     
