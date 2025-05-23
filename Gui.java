@@ -30,7 +30,9 @@ public class Gui {
     } else if (button == (Ismid)) {
        buttons = button * 1;
     }
-    else if (button == ())
+    else if (button == (button)) {
+    System.out.println("Ok to all ");
+    }
     
 
     
