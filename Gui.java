@@ -32,6 +32,8 @@ public class Gui {
     }
     else if (button == (button)) {
     System.out.println("Ok to all ");
+    } default {
+      System.out.println("Error");
     }
     
 
