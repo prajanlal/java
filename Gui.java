@@ -19,22 +19,7 @@ public class Gui {
                        7, 8, 9,
                        =, +, -};
 
-    button.setOnClickListener(OnClick listener()) {
-                              if( button == (button)) {
-                                buttons = button + 1;
-    }
-    if(button == (empty)) {
-      buttons = button - 1;
-    } else if (button == (Isfull)) {
-      buttons = button++;
-    } else if (button == (Ismid)) {
-       buttons = button * 1;
-    }
-    else if (button == (button)) {
-    System.out.println("Ok to all ");
-    } default {
-      System.out.println("Error");
-    }
+    
     
 
     
