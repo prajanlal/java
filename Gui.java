@@ -1,4 +1,6 @@
 public class Gui {
+    private DefaultListModel<String> taskListModel;
+    private ArrayList<String> tasks;
   public static void main(String[] args) {
     JFrame frame = new JFrame("Calculator");
     JPanel panel = new JPanel();
@@ -14,10 +16,75 @@ public class Gui {
 
     panel.setLayout(null);
 
-    String[] button = {1, 2, 3,
-                       4, 5, 6,
-                       7, 8, 9,
-                       =, +, -};
+    
+    public TaskManagerGUI() {
+        tasks = new ArrayList<>();
+        taskListModel = new DefaultListModel<>();
+        createUI();
+    }
+    
+    private void createUI() {
+        JFrame frame = new JFrame("Task Manager");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 300);
+        
+        JPanel panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        
+        JList<String> taskList = new JList<>(taskListModel);
+        JScrollPane scrollPane = new JScrollPane(taskList);
+        panel.add(scrollPane, BorderLayout.CENTER);
+        
+        JPanel inputPanel = new JPanel();
+        inputPanel.setLayout(new FlowLayout());
+        
+  
+        
+        inputPanel.add(taskField);
+        inputPanel.add(addButton);
+        inputPanel.add(listButton);
+        inputPanel.add(deleteButton);
+        
+        panel.add(inputPanel, BorderLayout.SOUTH);
+        
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String task = taskField.getText();
+                if (!task.isEmpty()) {
+                    tasks.add(task);
+                    taskListModel.addElement(task);
+                    taskField.setText("");
+                }
+            }
+        });
+        
+        listButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frame, "Tasks:\n" + String.join("\n", tasks));
+            }
+        });
+        
+        deleteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int selectedIndex = taskList.getSelectedIndex();
+                if (selectedIndex != -1) {
+                    tasks.remove(selectedIndex);
+                    taskListModel.remove(selectedIndex);
+                }
+            }
+        });
+        
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new TaskManagerGUI();
+    }
+}, +, -};
 
     
     
