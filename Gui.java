@@ -1,3 +1,7 @@
+import java.panel;
+import java.scrollPane;
+import java.BorderLayout;
+
 public class Gui {
     private DefaultListModel<String> taskListModel;
     private ArrayList<String> tasks;
