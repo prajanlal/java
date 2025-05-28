@@ -30,7 +30,7 @@ public class Gui {
     }
     
     private void createUI() {
-        JFrame frame = new JFrame("Task Manager");
+        JFrame frame = new JFrame("Task Manager");                           //Creating a parent/Main method 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 300);
         
