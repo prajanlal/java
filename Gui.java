@@ -1,7 +1,8 @@
 import java.panel;
 import java.scrollPane;
 import java.BorderLayout;
-
+import java.JscrollPane;
+import java.
 public class Gui {
     private DefaultListModel<String> taskListModel;
     private ArrayList<String> tasks;
@@ -23,7 +24,7 @@ public class Gui {
  //   panel.setLayout(null);
 
     public void TaskManagerGUI() {
-        tasks = new ArrayList<>();
+        tasks = new ArrayList<>();                        //Main method of this Gui program
         taskListModel = new DefaultListModel<>();
         createUI();
     }
