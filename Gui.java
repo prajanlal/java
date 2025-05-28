@@ -5,23 +5,24 @@ import java.BorderLayout;
 public class Gui {
     private DefaultListModel<String> taskListModel;
     private ArrayList<String> tasks;
-  public static void main(String[] args) {
-    JFrame frame = new JFrame("Calculator");
-    JPanel panel = new JPanel();
-
-    frame.setSize(450,450);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setVisible(True);
-    frame.add(panel);
-
-    JTextField textField = new JTextField();
-    textField.setBounds(20,30,400,30);
-    panel.add(textField);
-
-    panel.setLayout(null);
-
     
-    public TaskManagerGUI() {
+  public static void main(String[] args) {
+      
+  //  JFrame frame = new JFrame("Calculator");
+ //   JPanel panel = new JPanel();
+
+  //  frame.setSize(450,450);
+  //  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  //  frame.setVisible(True);
+ //   frame.add(panel);
+
+   // JTextField textField = new JTextField();
+    textField.setBounds(20,30,400,30);
+//    panel.add(textField);
+
+ //   panel.setLayout(null);
+
+    public void TaskManagerGUI() {
         tasks = new ArrayList<>();
         taskListModel = new DefaultListModel<>();
         createUI();
@@ -41,8 +42,6 @@ public class Gui {
         
         JPanel inputPanel = new JPanel();
         inputPanel.setLayout(new FlowLayout());
-        
-  
         
         inputPanel.add(taskField);
         inputPanel.add(addButton);
