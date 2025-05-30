@@ -18,10 +18,7 @@ public class Gui {
  //   frame.add(panel);
 
    // JTextField textField = new JTextField();
-    textField.setBounds(20,30,400,30);
-//    panel.add(textField);
-
- //   panel.setLayout(null);
+    textField.setBounds(20,30,400,300);
 
     public void TaskManagerGUI() {
         tasks = new ArrayList<>();                        //Main method of this Gui program
