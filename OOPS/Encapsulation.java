@@ -1,4 +1,4 @@
-class area {
+public class area {
     int length;
     int breadth;
     int area;
