@@ -39,9 +39,7 @@ public class Gui implements ActionListener {
           JButton buttonmul  =new JButton("*");
           buttonmul.setBounds(95,105,200,50);
           panel.add(buttonmul);
-
-       
-
+      
           JButton buttondiv = new JButton("/");
           buttondiv.setBounds(120,125,200,50);
           panel.add(buttondiv);
