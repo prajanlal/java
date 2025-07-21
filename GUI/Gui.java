@@ -51,8 +51,6 @@ public class Gui implements ActionListener {
           JButton Delete = new JButton("Delete");
           Delete.setBounds(145, 155, 200, 50);
          
-          JButton Clear = new JButton();
-          Clear.setBounds(165, 175, 200, 50);
     }
           }
            
