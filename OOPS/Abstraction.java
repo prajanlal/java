@@ -11,21 +11,29 @@ abstract class Animal {
         }
     }
 class Goat extends Animal {
-    public void goat{
-    System.out.println("The goat says: suii");
+    public void eats() {
+    System.out.println("The goat ats: grass");
     }
 }
 class fox extends Animal {
-    public void fox() {
+    public void foxSound() {
         System.out.println("The fox says: auoo");
     }
 }
-      // main class
+      
     class  Main{
         public static void main(String[] args) {
             Cow myCow = new Cow();
             myCow.animalSound();
             myCow.sleep();
+            
+            Goat mygoat = new Goat();
+            mygoat.goateats();
+            mygoat.sleep();
+            
+            Fox myfox = new Fox();
+            myfox.foxSound();
+            myfox.sleep();
         }
     }
 
