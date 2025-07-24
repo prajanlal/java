@@ -1,6 +1,6 @@
 import java.io.File;
 
-class Creatingfile{
+public class Creatingfile {
   @SuppressWarnings("unused")
   public static void main(String[] args){
     File file = new File("gathered");
