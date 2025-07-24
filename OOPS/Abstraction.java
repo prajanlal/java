@@ -15,6 +15,11 @@ class Goat extends Animal {
     System.out.println("The goat says: suii");
     }
 }
+class fox extends Animal {
+    public void fox() {
+        System.out.println("The fox says: auoo");
+    }
+}
       // main class
     class  Main{
         public static void main(String[] args) {
