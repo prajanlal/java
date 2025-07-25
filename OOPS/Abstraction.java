@@ -44,6 +44,30 @@ boolean hasGear;
     void kickStart() {
         System.out.println("Kick-starting the bike");
     }
+    void display() {
+        super.displayinfo();
+        System.out.println("Type: Bike");
+        System.out.println("Has Gear: "+(hasGear ? "Yes" : "No"));
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car("Toyota",4);
+        car.displayInfo();
+        car.startEngine();
+        car.opentruck();
+        car.stopEngine();
+
+        System.out.printin("\n-------------------------\n");
+
+        Bike bike = new Bike("Honda", true);
+        bike.displayinfo();
+        bike.startEngine();
+        bike.kickStart();
+        bike.stopEngine();
+    }
+}
+        
     
       
     
