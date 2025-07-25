@@ -1,41 +1,23 @@
-abstract class Animal {
-    public void sleep() {
-        System.out.println("Zzz");
-    }
+abstract class Vehicle {
+    String brand;
+     Vehicle(String brand ) {
+         this.brand = brand;
+     }
+    abstract void startEngine();
+    abstract void stopEngine();
+
+   void displayinfo() {
+       System.out.println("Brand: " +brand);
+   }
 }
-
-    // Subclass
-    class Cow extends Animal {
-        public void animalSound() {
-            System.out.println("The cow says: moo moo");
-        }
+class Car extends Vehicle {
+    int doors;
+     Car(String brand, int doors) {
+         super(brand);
+         this.doors = doors;
+     }
+    void startEngine() {
+        System.out.println("Car engine started");
     }
-class Goat extends Animal {
-    public void eats() {
-    System.out.println("The goat ats: grass");
-    }
-}
-class fox extends Animal {
-    public void foxSound() {
-        System.out.println("The fox says: auoo");
-    }
-}
-      
-    class  Main{
-        public static void main(String[] args) {
-            Cow myCow = new Cow();
-            myCow.animalSound();
-            myCow.sleep();
-            
-            Goat mygoat = new Goat();
-            mygoat.goateats();
-            mygoat.sleep();
-            
-            Fox myfox = new Fox();
-            myfox.foxSound();
-            myfox.sleep();
-        }
-    }
-
-
-
+    
+    
