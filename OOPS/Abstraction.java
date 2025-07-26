@@ -1,7 +1,8 @@
 abstract class Vehicle {
+    
     String brand;
-     Vehicle(String brand ) {
-         this.brand = brand;
+     Vehicle (String brand ) {
+       this.brand = brand;
      }
     abstract void startEngine();
     abstract void stopEngine();
@@ -12,8 +13,8 @@ abstract class Vehicle {
 }
 class Car extends Vehicle {
     int doors;
-     Car(String brand, int doors) {
-         super(brand);
+    Car (String brand, int doors) {
+        super(brand);
          this.doors = doors;
      }
     void startEngine() {
@@ -23,17 +24,17 @@ class Car extends Vehicle {
     System.out.println("Car engine stopped");
     }
   void display() {
-      super.displayinfo();
+     super.displayinfo();
       System.out.println("Type: Car");
       System.out.println("Doors:"+doors);
   }
 }
 class Bike extends Vehicle() {
-boolean hasGear;
+    boolean hasGear;
 
-    Bike(String brand,boolean hasGear) {
+     Bike (String brand,boolean hasGear) {
         super(brand);
-        this.hasGear=hasGear;
+         this.hasGear=hasGear;
     }
     void startEngine() {
         System.out.println("Bike engine started with self-start");
@@ -45,7 +46,7 @@ boolean hasGear;
         System.out.println("Kick-starting the bike");
     }
     void display() {
-        super.displayinfo();
+       super.displayinfo();
         System.out.println("Type: Bike");
         System.out.println("Has Gear: "+(hasGear ? "Yes" : "No"));
     }
@@ -53,18 +54,18 @@ boolean hasGear;
 public class Main {
     public static void main(String[] args) {
         Car car = new Car("Toyota",4);
-        car.displayInfo();
-        car.startEngine();
-        car.opentruck();
-        car.stopEngine();
+         car.displayInfo();
+         car.startEngine();
+         car.opentruck();
+         car.stopEngine();
 
-        System.out.printin("\n-------------------------\n");
+             System.out.printin("\n-------------------------\n");
 
         Bike bike = new Bike("Honda", true);
-        bike.displayinfo();
-        bike.startEngine();
-        bike.kickStart();
-        bike.stopEngine();
+         bike.displayinfo();
+         bike.startEngine();
+         bike.kickStart();
+         bike.stopEngine();
     }
 }
         
