@@ -59,7 +59,7 @@ public class Main {
          car.opentruck();
          car.stopEngine();
 
-             System.out.printin("\n-------------------------\n");
+             System.out.printin("\n----------------------------\n");
 
         Bike bike = new Bike("Honda", true);
          bike.displayinfo();
