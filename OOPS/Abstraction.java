@@ -54,11 +54,30 @@ class Bike extends Vehicle() {
         System.out.println("Kick-starting the bike");
     }
     
-    void display() {
+    void displayinfo() {
        super.displayinfo();
         System.out.println("Type: Bike");
         System.out.println("Has Gear: "+(hasGear ? "Yes" : "No"));
     }
+}
+
+class SuperBike extends Vehicle {
+       boolean booster;
+     SuperBike(String brand, boolean booster) {
+         super(brand);
+         this.booster;
+     }
+    void startEngine() {
+        System.out.println("The Superbike v8 engine has started");
+    }
+    void stopEngine() {
+System.out.println("The Superbike engine has stopped");
+    }
+void displayinfo() {
+    super.displayinfo();
+    System.out.println("Type: SuperBike);
+    System.out.println("Booster: "+(booster ? "Yes" : "No"));
+  }
 }
 
 public class Main {
