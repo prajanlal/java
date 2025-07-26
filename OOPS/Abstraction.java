@@ -73,6 +73,9 @@ class SuperBike extends Vehicle {
     void stopEngine() {
 System.out.println("The Superbike engine has stopped");
     }
+    void Nitrobooster() {
+        System.out.println("The SuperBike Nitrobooster onned");
+    }
 void displayinfo() {
     super.displayinfo();
     System.out.println("Type: SuperBike);
@@ -95,6 +98,12 @@ public class Main {
          bike.startEngine();
          bike.kickStart();
          bike.stopEngine();
+
+        Superbike superbike = new Superbike("Kawasaki", true);
+        superbike.displayinfo();
+        superbike.startEngine();
+        superbike.stopEngine();
+        superbike.Nitrobooster();
     }
 }
         
