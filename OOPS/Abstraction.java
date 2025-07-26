@@ -99,11 +99,12 @@ public class Main {
          bike.kickStart();
          bike.stopEngine();
 
+            System.out.println("\n--------------------------------------\n);
         Superbike superbike = new Superbike("Kawasaki", true);
-        superbike.displayinfo();
-        superbike.startEngine();
-        superbike.stopEngine();
-        superbike.Nitrobooster();
+         superbike.displayinfo();
+         superbike.startEngine();
+         superbike.stopEngine();
+         superbike.Nitrobooster();
     }
 }
         
