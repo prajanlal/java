@@ -70,12 +70,6 @@ class Car extends Vehicle {
 }
 
 class Bike extends Vehicle() {
-    boolean hasGear;
-
-     Bike (String brand, boolean hasGear) {
-        super(brand);
-         this.hasGear = hasGear;
-    }
     
     void startEngine() {
         System.out.println("Bike engine started with self-start");
@@ -83,6 +77,7 @@ class Bike extends Vehicle() {
     void acceleration() {
         System.out.println("Bike acceleration gives an emotion to travel");
     }
+
     void stopEngine(){
         System.out.println("Bike engine stopped");
     }
@@ -119,7 +114,8 @@ System.out.println("The Superbike engine has stopped");
 void displayinfo() {
     super.displayinfo();
     System.out.println("Type: SuperBike");
-    System.out.println("Booster: "+(booster ? "Yes" : "No"));
+
+    System.out.println("Booster: "+(booster ? "True" : "False"));
   }
 }
 
@@ -138,7 +134,6 @@ public class Main {
          bike.startEngine();
          bike.kickStart();
          bike.stopEngine();
-
             System.out.println("\n--------------------------------------\n");
         Superbike superbike = new Superbike("Kawasaki", true);
          superbike.displayinfo();
