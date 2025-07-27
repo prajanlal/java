@@ -5,13 +5,15 @@ abstract class Vehicle {
        this.brand = brand;
      }
 
-     public static void icon(){
+      public static void icon(){
          System.out.println("Royal Enfield");
      };
 
-    
     abstract void startEngine();
+
+
     abstract void acceleration();
+
     abstract void stopEngine();
 
    void displayinfo() {
@@ -40,7 +42,7 @@ class Bullet extends Vehicle {
         super.displayinfo();
         System.out.println("Type: Bullet");
         System.out.println( brand + "is a classic motorcycle");
-        System.out.println("Is it as bullet sound " + (bulbulbul ? "Yes" : "No"));
+        System.out.println("Is it as bullet sound " + (bulbulbul ? "True" : "False"));
        
     }
 }
@@ -65,6 +67,7 @@ class Car extends Vehicle {
   void display() {
      super.displayinfo();
       System.out.println("Type: Car");
+      System.out.println("Brand: "+brand);
       System.out.println("Doors:"+doors);
   }
 }
@@ -89,7 +92,8 @@ class Bike extends Vehicle() {
     void displayinfo() {
        super.displayinfo();
         System.out.println("Type: Bike");
-        System.out.println("Has Gear: "+(hasGear ? "Yes" : "No"));
+        System.out.println("Brand: "+brand);
+        System.out.println("Has Gear: "+(hasGear ? "true" : "false"));
     }
 }
 
@@ -114,32 +118,43 @@ System.out.println("The Superbike engine has stopped");
 void displayinfo() {
     super.displayinfo();
     System.out.println("Type: SuperBike");
-
-    System.out.println("Booster: "+(booster ? "True" : "False"));
+    System.out.println("Brand: "+brand);
+    System.out.println("Booster: "+(booster ? "true" : "false"));
   }
 }
 
 public class Main {
     public static void main(String[] args) {
+
+        Bullet bullet = new Bullet("Royal Enfined", true);
+        bullet.displayinfo();
+        bullet.startEngine();
+        bullet.acceleration();
+        bullet.stopEngine();
+
+        System.out.println("\n -------------------------------\n");
+        
         Car car = new Car("Toyota",4);
-         car.displayInfo();
+         car.displayinfo();
          car.startEngine();
          car.acceleration();
          car.stopEngine();
 
              System.out.println("\n----------------------------\n");
 
-        Bike bike = new Bike("Honda", true);
+        Bike bike = new Bike("Honda",true);
          bike.displayinfo();
          bike.startEngine();
          bike.kickStart();
          bike.stopEngine();
             System.out.println("\n--------------------------------------\n");
+
         Superbike superbike = new Superbike("Kawasaki", true);
          superbike.displayinfo();
          superbike.startEngine();
          superbike.stopEngine();
          superbike.Nitrobooster();
+
     }
 }
         
