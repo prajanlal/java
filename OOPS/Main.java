@@ -12,6 +12,31 @@ abstract class Vehicle {
        System.out.println("Brand: " +brand);
    }
 }
+class Bullet extends Vehicle {
+    boolean bulbulbul;
+    Bullet(String brand, boolean bulbulbul) {
+        super(brand);
+        this.bulbulbul = bulbulbul;
+    }
+    void acceleration() {
+        System.out.println("Powerful acceleration with a roar");
+        
+    }
+    void startEngine() {
+        System.out.println("Bullet engine started with bulbulbul sound");
+        
+    }
+    void stopEngine() {
+        System.out.println("Bullet engine has stopped, blubewbew");
+        
+    }
+    void displayinfo() {
+        super.displayinfo();
+        System.out.println("Type: Bullet");
+        System.out.println("Is it as bullet sound " + (bulbulbul ? "Yes" : "No"));
+
+    }
+}
 
 class Car extends Vehicle {
     int doors;
@@ -40,7 +65,7 @@ class Bike extends Vehicle() {
 
      Bike (String brand,boolean hasGear) {
         super(brand);
-         this.hasGear=hasGear;
+         this.hasGear = hasGear;
     }
     
     void startEngine() {
