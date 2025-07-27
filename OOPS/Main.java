@@ -4,12 +4,14 @@ abstract class Vehicle {
      Vehicle (String brand ) {
        this.brand = brand;
      }
+
      public static void icon(){
-                  System.out.println("Royal Enfield");
+         System.out.println("Royal Enfield");
      };
 
     
     abstract void startEngine();
+    abstract void acceleration();
     abstract void stopEngine();
 
    void displayinfo() {
@@ -23,13 +25,13 @@ class Bullet extends Vehicle {
         this.bulbulbul = bulbulbul;
     }
     void acceleration() {
+        System.out.println("Bullet engine started with bulbulbul sound");
+    }
+        void startEngine() {
         System.out.println("Powerful acceleration with a roar");
         
     }
-    void startEngine() {
-        System.out.println("Bullet engine started with bulbulbul sound");
         
-    }
     void stopEngine() {
         System.out.println("Bullet engine has stopped, blubewbew");
         
@@ -53,7 +55,9 @@ class Car extends Vehicle {
     void startEngine() {
         System.out.println("Car engine started");
     }
-    
+    void acceleration() {
+        System.out.println("Car acceleration is so smooth and powerful ");
+    }
     void stopEngine() {
     System.out.println("Car engine stopped");
     }
@@ -68,13 +72,16 @@ class Car extends Vehicle {
 class Bike extends Vehicle() {
     boolean hasGear;
 
-     Bike (String brand,boolean hasGear) {
+     Bike (String brand, boolean hasGear) {
         super(brand);
          this.hasGear = hasGear;
     }
     
     void startEngine() {
         System.out.println("Bike engine started with self-start");
+    }
+    void acceleration() {
+        System.out.println("Bike acceleration gives an emotion to travel");
     }
     void stopEngine(){
         System.out.println("Bike engine stopped");
@@ -95,10 +102,13 @@ class SuperBike extends Vehicle {
        boolean booster;
      SuperBike(String brand, boolean booster) {
          super(brand);
-         this.booster;
+         this.booster = booster;
      }
     void startEngine() {
         System.out.println("The Superbike v8 engine has started");
+    }
+    void acceleration() {
+        System.out.println("The Superbike acceleration and the power is fabulous and thrilling to ride fast");
     }
     void stopEngine() {
 System.out.println("The Superbike engine has stopped");
@@ -108,7 +118,7 @@ System.out.println("The Superbike engine has stopped");
     }
 void displayinfo() {
     super.displayinfo();
-    System.out.println("Type: SuperBike);
+    System.out.println("Type: SuperBike");
     System.out.println("Booster: "+(booster ? "Yes" : "No"));
   }
 }
@@ -118,10 +128,10 @@ public class Main {
         Car car = new Car("Toyota",4);
          car.displayInfo();
          car.startEngine();
-         car.opentruck();
+         car.acceleration();
          car.stopEngine();
 
-             System.out.printin("\n----------------------------\n");
+             System.out.println("\n----------------------------\n");
 
         Bike bike = new Bike("Honda", true);
          bike.displayinfo();
@@ -129,7 +139,7 @@ public class Main {
          bike.kickStart();
          bike.stopEngine();
 
-            System.out.println("\n--------------------------------------\n);
+            System.out.println("\n--------------------------------------\n");
         Superbike superbike = new Superbike("Kawasaki", true);
          superbike.displayinfo();
          superbike.startEngine();
