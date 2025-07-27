@@ -33,8 +33,9 @@ class Bullet extends Vehicle {
     void displayinfo() {
         super.displayinfo();
         System.out.println("Type: Bullet");
+        System.out.println( brand + "is a classic motorcycle");
         System.out.println("Is it as bullet sound " + (bulbulbul ? "Yes" : "No"));
-
+       
     }
 }
 
