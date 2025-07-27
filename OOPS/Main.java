@@ -4,6 +4,10 @@ abstract class Vehicle {
      Vehicle (String brand ) {
        this.brand = brand;
      }
+     public static void icon(){
+                  System.out.println("Royal Enfield");
+     };
+
     
     abstract void startEngine();
     abstract void stopEngine();
