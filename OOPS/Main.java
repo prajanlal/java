@@ -11,7 +11,6 @@ abstract class Vehicle {
 
     abstract void startEngine();
 
-
     abstract void acceleration();
 
     abstract void stopEngine();
@@ -73,7 +72,12 @@ class Car extends Vehicle {
 }
 
 class Bike extends Vehicle() {
-    
+    int speed;
+
+    Bike(String brand, int speed);
+    super(brand);
+        this.speed = speed;
+}
     void startEngine() {
         System.out.println("Bike engine started with self-start");
     }
@@ -93,6 +97,7 @@ class Bike extends Vehicle() {
        super.displayinfo();
         System.out.println("Type: Bike");
         System.out.println("Brand: "+brand);
+        System.out.println("Speed: "+speed+ "km/h")
         System.out.println("Has Gear: "+(hasGear ? "true" : "false"));
     }
 }
@@ -152,6 +157,7 @@ public class Main {
         Superbike superbike = new Superbike("Kawasaki", true);
          superbike.displayinfo();
          superbike.startEngine();
+         superbike.acceleration();
          superbike.stopEngine();
          superbike.Nitrobooster();
 
