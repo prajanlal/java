@@ -51,6 +51,7 @@ class Supercar extends Vehicle {
         super(brand);
         this.speed = speed;
     }
+    
     void startEngine() {
         System.out.println("Start Supercar Engine");
     }
