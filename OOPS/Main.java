@@ -87,7 +87,7 @@ class Car extends Vehicle {
     System.out.println("Car engine stopped");
     }
     
-  void display() {
+  void displayinfo() {
      super.displayinfo();
       System.out.println("Type: Car");
       System.out.println("Brand: "+brand);
