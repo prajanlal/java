@@ -45,6 +45,29 @@ class Bullet extends Vehicle {
        
     }
 }
+class Supercar extends Vehicle {
+    int speed;
+    Supercar(String brand, int speed) {
+        super(brand);
+        this.speed = speed;
+    }
+    void startEngine() {
+        System.out.println("Start Supercar Engine");
+    }
+    void acceleration() {
+        System.out.println("Supercar acceleration is so fast and powerful");
+    }
+    void stopEngine() {
+        System.out.println("Supercar engine stopped");
+    }
+    void displayinfo() {
+        super.displayinfo();
+        System.out.println("Type: Supercar");
+        System.out.println("Brand:"+brand);
+        System.out.println("Speed: " +speed + "km/h");
+    }
+
+}
 
 class Car extends Vehicle {
     int doors;
@@ -100,7 +123,7 @@ class Bike extends Vehicle() {
         System.out.println("Speed: "+speed+ "km/h")
         System.out.println("Has Gear: "+(hasGear ? "true" : "false"));
     }
-}
+
 
 class SuperBike extends Vehicle {
        boolean booster;
