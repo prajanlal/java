@@ -13,7 +13,9 @@ abstract class Vehicle {
 
     abstract void acceleration();
 
+    abstract void Nitrobooster();
     abstract void stopEngine();
+
 
    void displayinfo() {
        System.out.println("Brand: " +brand);
@@ -31,6 +33,9 @@ class Bullet extends Vehicle {
         void startEngine() {
         System.out.println("Powerful acceleration with a roar");
         
+    }
+    void Nitrobooster() {
+        System.out.println("Bullet does not have a Notrobooster");
     }
         
     void stopEngine() {
@@ -51,12 +56,15 @@ class Supercar extends Vehicle {
         super(brand);
         this.speed = speed;
     }
-    
+
     void startEngine() {
         System.out.println("Start Supercar Engine");
     }
     void acceleration() {
         System.out.println("Supercar acceleration is so fast and powerful");
+    }
+    void Nitrobooster() {
+        System.out.println("Supercar already has a Nitrobooster");
     }
     void stopEngine() {
         System.out.println("Supercar engine stopped");
@@ -67,10 +75,10 @@ class Supercar extends Vehicle {
         System.out.println("Brand:"+brand);
         System.out.println("Speed: " +speed + "km/h");
     }
-
 }
 
 class Car extends Vehicle {
+    String speedy;
     int doors;
     Car (String brand, int doors) {
         super(brand);
@@ -82,6 +90,9 @@ class Car extends Vehicle {
     }
     void acceleration() {
         System.out.println("Car acceleration is so smooth and powerful ");
+    }
+    void Nitrobooster() {
+        System.out.println("Car: "+speedy + "km/h");
     }
     void stopEngine() {
     System.out.println("Car engine stopped");
