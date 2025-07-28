@@ -106,11 +106,12 @@ class Car extends Vehicle {
   }
 }
 
-class Bike extends Vehicle() {
+class  Bike extends Vehicle {
+    boolean hasGrear;
     int speed;
 
-    Bike(String brand, int speed);
-    super(brand);
+    Bike(String brand, int speed){
+      super(brand);
         this.speed = speed;
 }
     void startEngine() {
@@ -119,7 +120,9 @@ class Bike extends Vehicle() {
     void acceleration() {
         System.out.println("Bike acceleration gives an emotion to travel");
     }
-
+         void Nitrobooster() {
+            System.out.println("Bike Nitrobooster gets started");
+         }
     void stopEngine(){
         System.out.println("Bike engine stopped");
     }
@@ -132,10 +135,10 @@ class Bike extends Vehicle() {
        super.displayinfo();
         System.out.println("Type: Bike");
         System.out.println("Brand: "+brand);
-        System.out.println("Speed: "+speed+ "km/h")
-        System.out.println("Has Gear: "+(hasGear ? "true" : "false"));
+        System.out.println("Speed: "+speed+ "km/h");
+        System.out.println("Has Gear: " + (hasGear ? "Yes" : "No"));
     }
-
+}
 
 class SuperBike extends Vehicle {
        boolean booster;
