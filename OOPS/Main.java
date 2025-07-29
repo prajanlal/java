@@ -181,6 +181,7 @@ public class Main {
           supercar.displayinfo();
           supercar.startEngine();
           supercar.acceleration();
+          supercar.Nitrobooster();
           supercar.stopEngine();
           
           System.out.println("\n---------------------------------\n");
@@ -189,6 +190,7 @@ public class Main {
          car.displayinfo();
          car.startEngine();
          car.acceleration();
+         car.Nitrobooster();
          car.stopEngine();
 
              System.out.println("\n----------------------------\n");
@@ -197,6 +199,7 @@ public class Main {
          bike.displayinfo();
          bike.startEngine();
          bike.kickStart();
+          bike.Nitrobooster();
          bike.stopEngine();
             System.out.println("\n--------------------------------------\n");
 
@@ -204,8 +207,8 @@ public class Main {
          superbike.displayinfo();
          superbike.startEngine();
          superbike.acceleration();
-         superbike.stopEngine();
          superbike.Nitrobooster();
+         superbike.stopEngine();
 
     }
 }
