@@ -107,7 +107,7 @@ class Car extends Vehicle {
 }
 
 class  Bike extends Vehicle {
-    boolean hasGrear;
+    boolean hasGear;
     int speed;
 
     Bike(String brand, int speed){
