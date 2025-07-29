@@ -176,7 +176,15 @@ public class Main {
         bullet.stopEngine();
 
         System.out.println("\n -------------------------------\n");
-        
+
+              Supercar supercar = new Supercar("Bently GT", 100/kmph);
+          supercar.displayinfo();
+          supercar.startEngine();
+          supercar.acceleration();
+          supercar.stopEngine();
+          
+          System.out.println("\n---------------------------------\n");
+          
         Car car = new Car("Toyota",4);
          car.displayinfo();
          car.startEngine();
