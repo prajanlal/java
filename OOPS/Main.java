@@ -176,11 +176,21 @@ public class Main {
         bullet.stopEngine();
 
         System.out.println("\n -------------------------------\n");
-        
+
+              Supercar supercar = new Supercar("Bently GT", 100/kmph);
+          supercar.displayinfo();
+          supercar.startEngine();
+          supercar.acceleration();
+          supercar.Nitrobooster();
+          supercar.stopEngine();
+          
+          System.out.println("\n---------------------------------\n");
+          
         Car car = new Car("Toyota",4);
          car.displayinfo();
          car.startEngine();
          car.acceleration();
+         car.Nitrobooster();
          car.stopEngine();
 
              System.out.println("\n----------------------------\n");
@@ -189,6 +199,7 @@ public class Main {
          bike.displayinfo();
          bike.startEngine();
          bike.kickStart();
+          bike.Nitrobooster();
          bike.stopEngine();
             System.out.println("\n--------------------------------------\n");
 
@@ -196,8 +207,8 @@ public class Main {
          superbike.displayinfo();
          superbike.startEngine();
          superbike.acceleration();
-         superbike.stopEngine();
          superbike.Nitrobooster();
+         superbike.stopEngine();
 
     }
 }

@@ -1,6 +1,4 @@
 import javax.swing.*;
-//import java.awt.Container;
-//import java.awt.event.*;
 import java.awt.*;
 import java.awt.event.*;
 @SuppressWarnings("unused")
@@ -13,7 +11,7 @@ public class Gui implements ActionListener {
     private static JLabel Success;
    
     //https://beginnersbook.com/2015/07/java-swing-tutorial
-    public static void main(String args[]){ 
+    public static void main(String args[]) { 
         JFrame frame = new JFrame("Calculator"); 
         frame.setSize(450,450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
