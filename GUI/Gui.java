@@ -1,6 +1,4 @@
 import javax.swing.*;
-//import java.awt.Container;
-//import java.awt.event.*;
 import java.awt.*;
 import java.awt.event.*;
 public class Gui implements ActionListener {  
