@@ -12,17 +12,17 @@
  }
 
  @Override
- public void accelerate( ) {
+ public void accelerate() {
   System.out.println("The acceleration has been starteed");
  }
 
  @Override
-  public void brake( ) {
+  public void brake() {
   System.out.println("It's time to brake");
  }
 
  @Override
- public void refuel( ) {
+ public void refuel() {
   System.out.println("The bike fuel has been refuelled");
  }
 

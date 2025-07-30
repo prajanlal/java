@@ -1,21 +1,21 @@
 
 public interface Vehicle {
 
-    void start();
+   public void start();
 
-    void stop();
+   public  void stop();
 
-    void accelerate();
+   public void accelerate();
 
-    void brake();
+   public void brake();
 
-    void refuel();
+   public void refuel();
 
-    void displaystatus();
+   public void displaystatus();
 
-    void Engine();
+    public void Engine();
 
-    void HP();
+    public void HP();
 
     int getTopSpeed();
 

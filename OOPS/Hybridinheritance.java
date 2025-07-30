@@ -1,12 +1,22 @@
-class SolarSystem {
+public interface Hybridinheritance  {
+     void NovalPlanet();
+}
+
+class SolarSystem  {
+    String life;
+    void basicfunctions() {
+        System.out.println("Basic functions of Solar System");
+    }
 }
 class Earth extends SolarSystem {
+    void EarthInfo() {
+    System.out.println("Has life"+life);
+    }
 }
 class Mars extends SolarSystem {
 }
-public class Hybridinheritance extends SolarSystem {
-    public static void main(String args[])
-    {
+ class test extends SolarSystem {
+    public static void main(String args[]) {
         SolarSystem s = new SolarSystem();
         Earth e = new Earth();
         Mars m = new Mars();
