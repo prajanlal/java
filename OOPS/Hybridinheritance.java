@@ -10,19 +10,28 @@ class SolarSystem  {
 }
 class Earth extends SolarSystem {
     void EarthInfo() {
-    System.out.println("Has life"+life);
+    System.out.println("Has life: "+life);
     }
 }
 class Mars extends SolarSystem {
     void MarsInfo() {
-        System.out.println("Mars has no life"+life);
+        System.out.println("Mars has no life: "+life);
     }
 }
  class test extends SolarSystem {
     public static void main(String args[]) {
         SolarSystem s = new SolarSystem();
         Earth e = new Earth();
+        e.life = "Yes";
+        e.basicfunctions();
+        e.EarthInfo();
+        s.basicfunctions();
+
         Mars m = new Mars();
+        m.life = "No";
+        m.basicfunctions();
+        m.MarsInfo();
+
 
         System.out.println(s instanceof SolarSystem);
         System.out.println(e instanceof Earth);
