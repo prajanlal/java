@@ -10,7 +10,8 @@ abstract class Vehicle {
      };
 
     abstract void startEngine();
-
+     
+    abstract void kickStart();
     abstract void acceleration();
 
     abstract void Nitrobooster();
@@ -33,6 +34,9 @@ class Bullet extends Vehicle {
         void startEngine() {
         System.out.println("Powerful acceleration with a roar");
         
+    }
+    void kickStart() {
+        System.out.println("Kick-starting the Bullet with a classic sound");
     }
     void Nitrobooster() {
         System.out.println("Bullet does not have a Notrobooster");
@@ -201,15 +205,15 @@ public class Main {
           bike.kickStart();
           bike.Nitrobooster();
           bike.stopEngine();
+          
             System.out.println("\n--------------------------------------\n");
 
-        Superbike superbike = new Superbike("kawasaki", true);
-         superbike.displayinfo();
-         superbike.startEngine();
-         superbike.acceleration();
-         superbike.Nitrobooster();
-         superbike.stopEngine();
+        Superbike superbike = new Superbike("Kawasaki", true);
+          superbike.displayinfo();
+          superbike.startEngine();
+          superbike.acceleration();
+          superbike.Nitrobooster();
+          superbike.stopEngine();
 
     }
 }
-        
