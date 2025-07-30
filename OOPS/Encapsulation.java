@@ -1,7 +1,8 @@
 public class Encapsulation {
- private String name;
- private int age;
- private String address;
+
+  private String name;
+  private int age;
+  private String address;
   private int phoneNumber;
   private String email;
   private String password;
@@ -59,6 +60,8 @@ public class Encapsulation {
         System.out.println("Password: " +password);
     }
 }
+
+
 
 
   
