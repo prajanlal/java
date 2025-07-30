@@ -37,11 +37,11 @@ public class Multilevelinheritance {
       rectangle.shapeColor = "Blue";
       rectangle.area();
       rectangle.display();
-           System.out.println("\n ----------------------------------\n")
+           System.out.println("\n ----------------------------------\n");
       Cube cube = new Cube();
       cube.shape = "Cube";
       cube.shapeSize = 3;
-      cube.shapeColor = "Reed";
+      cube.shapeColor = "Red";
       cube.volume();
       cube.display();
    }
