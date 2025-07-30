@@ -98,6 +98,9 @@ class Car extends Vehicle {
     void acceleration() {
         System.out.println("Car acceleration is so smooth and powerful ");
     }
+    void kickStart() {
+        System.out.println("Car does not have a kick start feature");
+    }
     void Nitrobooster() {
         System.out.println("Car: "+speedy + "km/h");
     }
@@ -135,7 +138,7 @@ class  Bike extends Vehicle {
     }
     
     void kickStart() {
-        System.out.println("Kick-starting the bike");
+        System.out.println("Kick-started the bike");
     }
     
     void displayinfo() {
@@ -158,6 +161,9 @@ class  Bike extends Vehicle {
     }
     void acceleration() {
         System.out.println("The Superbike acceleration and the power is fabulous and thrilling to ride fast");
+    }
+    void kickStart() {
+        System.out.println("The superbile does not have a kick start feature");
     }
     void stopEngine() {
 System.out.println("The Superbike engine has stopped");
