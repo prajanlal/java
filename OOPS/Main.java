@@ -67,6 +67,9 @@ class Supercar extends Vehicle {
     void acceleration() {
         System.out.println("Supercar acceleration is so fast and powerful");
     }
+    void kickStart() {
+        System.out.println("Supercar does not have a kick start feature");
+    }
     void Nitrobooster() {
         System.out.println("Supercar already has a Nitrobooster");
     }
