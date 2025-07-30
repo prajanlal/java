@@ -14,6 +14,9 @@ class Earth extends SolarSystem {
     }
 }
 class Mars extends SolarSystem {
+    void MarsInfo() {
+        System.out.println("Mars has no life"+life);
+    }
 }
  class test extends SolarSystem {
     public static void main(String args[]) {
