@@ -30,16 +30,19 @@ class Cube extends Rectangle {
 }
 public class Multilevelinheritance {
    public static void main(String[] arguments) {
-      
+
       Rectangle rectangle = new Rectangle();
       rectangle.shape = "Rectangle";
       rectangle.shapeSize = 5;
       rectangle.shapeColor = "Blue";
-      rectangle.display();
       rectangle.area();
-
+      rectangle.display();
+           System.out.println("\n ----------------------------------\n")
       Cube cube = new Cube();
-      cube.display();
+      cube.shape = "Cube";
+      cube.shapeSize = 3;
+      cube.shapeColor = "Reed";
       cube.volume();
+      cube.display();
    }
 }
