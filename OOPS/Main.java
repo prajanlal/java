@@ -110,9 +110,9 @@ class  Bike extends Vehicle {
     boolean hasGear;
     int speed;
 
-    Bike(String brand, String good){
+    Bike(String brand, boolean hasGear) {
       super(brand);
-        this.good = good;
+        this.hasGear = hasGear;
 }
     void startEngine() {
         System.out.println("Bike engine started with self-start");
@@ -140,11 +140,11 @@ class  Bike extends Vehicle {
     }
 }
 
-class SuperBike extends Vehicle {
+ class SuperBike extends Vehicle {
        boolean booster;
-     SuperBike(String brand, boolean highpower) {
+     SuperBike(String brand, boolean booster) {
          super(brand);
-         this.highpower = highpower;
+         this.booster = booster;
      }
     void startEngine() {
         System.out.println("The Superbike v8 engine has started");
@@ -177,7 +177,7 @@ public class Main {
 
         System.out.println("\n -------------------------------\n");
 
-              Supercar supercar = new Supercar("Bently GT", 100/kmph);
+              Supercar supercar = new Supercar("Bently GT", 120);
           supercar.displayinfo();
           supercar.startEngine();
           supercar.acceleration();
@@ -195,7 +195,7 @@ public class Main {
 
              System.out.println("\n----------------------------\n");
 
-        Bike bike = new Bike("Honda","yes");
+        Bike bike = new Bike("Honda", true);
           bike.displayinfo();
           bike.startEngine();
           bike.kickStart();
@@ -203,7 +203,7 @@ public class Main {
           bike.stopEngine();
             System.out.println("\n--------------------------------------\n");
 
-        Superbike superbike = new Superbike("kawasaki","true");;
+        Superbike superbike = new Superbike("kawasaki", true);
          superbike.displayinfo();
          superbike.startEngine();
          superbike.acceleration();
