@@ -12,6 +12,16 @@ public class Polymorphism{
             public void speed() {
                 System.out.println("BUGGATI has world record for top speed on the planet better than bmw");
             }
+        class petrolVariend {
+            public void petrol() {
+                System.out.println("petrol is a fuel");
+            }
+        }
+        class dieselVariand {
+           public void diesel() {
+            System.out.println("Diesel is a fuel that is used in heavy vehicles");
+           }
+        }
         }
     }
 }
