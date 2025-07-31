@@ -2,8 +2,11 @@ public class Task {
     private String Name;
     private String status;
     private boolean important;
+    private boolean delete;
+    private boolean rename;
 
-    public void setname(String name){
+
+    public void setname(String name) {
       this.Name = name;
     }
     public String getname(){
@@ -23,11 +26,18 @@ public class Task {
     public boolean getImportant() {
          return  important;
     }
+    public void setdelete(boolean delete) {
+      this.delete = delete;
+    }
+    public boolean getdelete() {
+      return delete;
+    }
 
-         public Task(String Name,String Status,boolean Important) {
+         public Task(String Name, String Status, boolean Important, boolean delete) {
             this.Name =Name;
             this.status =Status;
             this.important = Important;
+            this.delete = delete;
           }
                 public String getName(){
                   return Name;
@@ -37,5 +47,6 @@ public class Task {
         System.out.println("Name of the task: " + Name);
         System.out.println("Status: " + status);
         System.out.println("Important task: " + (important ? "Yes" : "No"));
+        System.out.println("Delete task: " + (delete ? "Yes" : "No"));
     }
 }

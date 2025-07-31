@@ -5,7 +5,6 @@ import java.util.Scanner;
            ArrayList<Task> tasks = new ArrayList<>();
           private final Scanner scanner = new Scanner(System.in);  
 
-
    public void addTask() { 
 
     System.out.print("Enter task name: ");                   
@@ -15,9 +14,12 @@ import java.util.Scanner;
     String status = scanner.nextLine();
 
     System.out.print("Is this task important?  (yes/no): ");
-    boolean important = scanner.nextLine().equalsIgnoreCase("yes");        
+    boolean important = scanner.nextLine().equalsIgnoreCase("yes");   
+    
+    System.out.println("Is this task want's to delete? (yes/no): ");
+    boolean delete = scanner.nextLine().equalsIgnoreCase("yes");
 
-    Task newTask = new Task( name, status, important);
+    Task newTask = new Task( name, status, important, delete );
     tasks.add(newTask);
     System.out.println("Task added successfully!");
 }
@@ -29,7 +31,7 @@ public void listTasks() {
         return;
     }
 
-    System.out.println("\nTask List:");
+    System.out.println("\nTask List: ");
     for (Task task : tasks) {
         task.display();
         System.out.println("-------------------------");
