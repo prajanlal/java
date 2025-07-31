@@ -32,6 +32,9 @@ public class Task {
     public boolean getdelete() {
       return delete;
     }
+    public void setRename(String rename) {
+      this.rename = rename;
+    }
 
          public Task(String Name, String Status, boolean Important, boolean delete) {
             this.Name =Name;
