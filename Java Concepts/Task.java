@@ -52,5 +52,6 @@ public class Task {
         System.out.println("Status: " + status);
         System.out.println("Important task: " + (important ? "Yes" : "No"));
         System.out.println("Delete task: " + (delete ? "Yes" : "No"));
+        System.out.println("Rename task: " +rename);
     }
 }
