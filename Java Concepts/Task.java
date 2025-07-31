@@ -36,11 +36,12 @@ public class Task {
       this.rename = rename;
     }
 
-         public Task(String Name, String Status, boolean Important, boolean delete) {
+         public Task(String Name, String Status, boolean Important, boolean delete, String rename) {
             this.Name =Name;
             this.status =Status;
             this.important = Important;
             this.delete = delete;
+            this.rename = rename;
           }
                 public String getName(){
                   return Name;
