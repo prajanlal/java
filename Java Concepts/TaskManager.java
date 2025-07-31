@@ -19,7 +19,10 @@ import java.util.Scanner;
     System.out.println("Is this task want's to delete? (yes/no): ");
     boolean delete = scanner.nextLine().equalsIgnoreCase("yes");
 
-    Task newTask = new Task( name, status, important, delete );
+    System.out.println("Do you eant to rename the task? (yes/no):");
+    boolean renameFlag= scanner.nextLine().equalsIgnoreCase("status");
+
+    Task newTask = new Task( name, status, important, delete, rename);
     tasks.add(newTask);
     System.out.println("Task added successfully!");
 }

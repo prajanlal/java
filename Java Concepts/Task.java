@@ -3,7 +3,7 @@ public class Task {
     private String status;
     private boolean important;
     private boolean delete;
-    private String rename;
+    private boolean rename;
 
 
     public void setname(String name) {
