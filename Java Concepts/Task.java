@@ -1,10 +1,10 @@
 public class Task {
+
     private String Name;
     private String status;
     private boolean important;
     private boolean delete;
     private boolean rename;
-
 
     public void setname(String name) {
       this.Name = name;
@@ -38,7 +38,7 @@ public class Task {
 
          public Task(String Name, String Status, boolean Important, boolean delete, String rename) {
             this.Name =Name;
-            this.status =Status;
+            this.status =Status; 
             this.important = Important;
             this.delete = delete;
             this.rename = rename;
