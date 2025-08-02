@@ -6,8 +6,8 @@ public class Interface {
      public static void main(String[] args) {
 
           try (Scanner scanner = new Scanner(System.in)) {
-             Vehicle Bike = new Bike();
-             Vehicle Car = new Car();
+             Vehicle Bike = new  Vehicle();
+             Vehicle Car = new Vehicle();
 
              System.out.println("\n");
              System.out.println("The Bike Behaviours");
