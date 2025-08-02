@@ -2,7 +2,7 @@ public class StringCharAt {
 
     public static void main(String[] args) {
         String str = "Hello, World!";
-
+          String str2 = "Java Programming";
         // Get the character at index 0 (the first character)
         char firstChar = str.charAt(0); 
 
