@@ -17,9 +17,7 @@ public class Gui implements ActionListener {
         frame.setVisible(true);
 
           panel.setLayout(null);
-
-      
-         
+      System.out.println("--------------------------------");
     }
 
     @Override
@@ -30,6 +28,7 @@ public class Gui implements ActionListener {
            
         
    
+
 
 
 
