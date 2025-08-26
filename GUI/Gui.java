@@ -25,11 +25,13 @@ public class Gui implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
  Gui gui = new Gui();
+      gui.text(" ");
     }
           }
            
         
    
+
 
 
 
