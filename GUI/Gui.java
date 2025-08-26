@@ -8,7 +8,7 @@ public class Gui implements ActionListener {
    
     //https://beginnersbook.com/2015/07/java-swing-tutorial
     public static void main(String args[]) { 
-        JFrame frame = new JFrame("Calculator"); 
+        JFrame frame = new JFrame("BRIGHT-DAY"); 
         frame.setSize(450,450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
@@ -30,6 +30,7 @@ public class Gui implements ActionListener {
            
         
    
+
 
 
 
