@@ -5,10 +5,6 @@ import java.awt.event.*;
 public class Gui implements ActionListener {  
   
     private static JLabel label;
-    private static JTextField userText;
-    private static JLabel passwordLabel;
-    private static JPasswordField passwordText; 
-    private static JLabel Success;
    
     //https://beginnersbook.com/2015/07/java-swing-tutorial
     public static void main(String args[]) { 
@@ -34,6 +30,7 @@ public class Gui implements ActionListener {
            
         
    
+
 
 
 
