@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-@SuppressWarnings("unused")
+
 public class Gui implements ActionListener {  
   
     private static JLabel label;
@@ -57,3 +57,4 @@ public class Gui implements ActionListener {
            
         
    
+
