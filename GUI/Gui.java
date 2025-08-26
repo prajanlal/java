@@ -17,7 +17,6 @@ public class Gui implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
         frame.add(panel);
-
       
         frame.setVisible(true);
 
@@ -50,11 +49,11 @@ public class Gui implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-      // TODO Auto-generated method stub
-      throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+
     }
           }
            
         
    
+
 
