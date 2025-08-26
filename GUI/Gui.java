@@ -22,28 +22,7 @@ public class Gui implements ActionListener {
 
           panel.setLayout(null);
 
-          JTextField textField  = new JTextField();
-          textField.setBounds(20, 30, 400, 50);
-          panel.add(textField);
-
-          JButton buttonadd = new JButton("+");
-          buttonadd.setBounds(95, 105,200, 50);
-          panel.add(buttonadd);
-
-          JButton buttonsub = new JButton("-");
-          buttonsub.setBounds(75,95,200,50);
-          panel.add(buttonsub);
-
-          JButton buttonmul  =new JButton("*");
-          buttonmul.setBounds(95,105,200,50);
-          panel.add(buttonmul);
       
-          JButton buttondiv = new JButton("/");
-          buttondiv.setBounds(120,125,200,50);
-          panel.add(buttondiv);
-          
-          JButton Delete = new JButton("Delete");
-          Delete.setBounds(145, 155, 200, 50);
          
     }
 
@@ -55,5 +34,6 @@ public class Gui implements ActionListener {
            
         
    
+
 
 
